@@ -20,7 +20,9 @@ public class Main implements Directions {
     public static void runJerooCode() {
         TestMain test = new TestMain();
         test.setup();
-        test.test1_flowerOrNet();
+     Jeroo jerry = new Jeroo(0,0,EAST,0){
+         jerry.IsNearFlowerOrNet();
+     }
 
 
     }
