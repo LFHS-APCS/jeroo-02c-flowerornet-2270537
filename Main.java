@@ -22,7 +22,28 @@ public class Main implements Directions {
         test.setup();
         test.test1_flowerOrNet();
 
-
+public boolean isFlowerOrNetNearInFront() {
+      if (isClear(AHEAD))
+      hop();
+      if (isFlower(AHEAD))
+      else if (isNet(AHEAD))
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      turn(LEFT);
+      return true;
+if (isClear(AHEAD))
+      hop();
+      if (!isFlower(AHEAD))
+      else if (!isNet(AHEAD))
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      turn(LEFT);
+        return false;
+    }
     }
 
 }
