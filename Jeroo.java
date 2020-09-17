@@ -1,4 +1,4 @@
-/**
+55/**
  * Put your Jeroo methods in this class.
  * @author Steve Aronson
  */
@@ -10,26 +10,37 @@ public class Jeroo extends JerooBase {
      *  No side effects and no errors.
      */
    public boolean isFlowerOrNetNearInFront() {
-      if (isClear(AHEAD))
+      if (isClear(AHEAD)){
       hop();
-      if (isFlower(AHEAD))
-      else if (isNet(AHEAD))
-      turn(LEFT);
+      if (isFlower(AHEAD)){
+       turn(LEFT);
       turn(LEFT);
       hop();
       turn(LEFT);
-      turn(LEFT);
+      turn(LEFT); 
       return true;
-if (isClear(AHEAD))
-      hop();
-      if (!isFlower(AHEAD))
-      else if (!isNet(AHEAD))
+      }
+      else if (isNet(AHEAD)){
       turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      turn(LEFT); 
+      return true;
+      }
+      else {
+        turn(LEFT);
       turn(LEFT);
       hop();
       turn(LEFT);
       turn(LEFT);
         return false;
+      }
+      }
+    else {
+
+    }
+    return false;
     }
 
     // Do NOT touch the code below here
