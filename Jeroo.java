@@ -37,9 +37,6 @@ public class Jeroo extends JerooBase {
         return false;
       }
       }
-    else {
-
-    }
     return false;
     }
 
