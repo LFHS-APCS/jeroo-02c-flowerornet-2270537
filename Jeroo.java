@@ -9,7 +9,26 @@ public class Jeroo extends JerooBase {
      *     in the front of the Jeroo?
      *  No side effects and no errors.
      */
-    public boolean isFlowerOrNetNearInFront() {
+   public boolean isFlowerOrNetNearInFront() {
+      if (isClear(AHEAD))
+      hop();
+      if (isFlower(AHEAD))
+      else if (isNet(AHEAD))
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      turn(LEFT);
+      return true;
+if (isClear(AHEAD))
+      hop();
+      if (!isFlower(AHEAD))
+      else if (!isNet(AHEAD))
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      turn(LEFT);
         return false;
     }
 
